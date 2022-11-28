@@ -1,0 +1,65 @@
+.playButton{
+    width: 150px;
+    height: 60px;
+    background-color: rgb(51, 51, 51);
+
+    border: 2px;
+    border-color: rgb(160, 160, 160);
+    border-radius: 15px;
+    border-style: groove;
+
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+    transition: all .6s;
+}
+
+.playButton:hover{
+    background-color: rgb(16, 180, 66);
+    box-shadow: 0 1px 20px rgba(16, 180, 65, 0.726);
+    border-style: hidden;
+}
+
+.playButton-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #Ffff;
+    position: relative;
+    top: 13px;
+}
+
+.playPage{
+    margin-top: 25px;
+    background-color: rgba(37, 37, 37, 0.699);
+    border-radius: 10px;
+
+    height: auto;
+    width: 1200px;
+    margin: auto;
+
+    padding: 10px;
+}
+
+.versionImage{
+
+    display: flex;
+    background-image: url(../../assets/images/versions/116.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 50%;
+    filter: blur(2px);
+
+    border-radius: 10px;
+    width: 1200px !important; 
+    height: 300px !important;
+}
+
+.buttonContainer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    transform: translateZ(0);
+    justify-content: center;
+}
