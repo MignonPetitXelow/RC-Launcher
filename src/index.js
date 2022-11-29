@@ -23,10 +23,11 @@ const createWindow = () =>
 
     win.on('page-title-updated', (evt) => {evt.preventDefault();});
     win.webContents.openDevTools()
-}
+};
 
-app.whenReady().then(() => { createWindow() })
-app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() })
+app.whenReady().then(() => { createWindow() });
+app.on('window-all-closed', () => { if (process.platform !== 'darwin') app.quit() });
+
 
 ipcMain.handle('elecapp.quit', () => {
     app.quit();
@@ -34,4 +35,8 @@ ipcMain.handle('elecapp.quit', () => {
 
 ipcMain.handle('elecapp.minimize', () => {
     win.isMinimized() ? win.restore() : win.minimize()
+});
+
+ipcMain.handle('mc.Start', () => {
+
 });
