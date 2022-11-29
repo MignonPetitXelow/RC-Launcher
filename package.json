@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node run src/index.js",
-    "run": "electron ."
+    "run": "electron .",
+    "build": ""
   },
   "author": "Xelow",
   "license": "ISC",

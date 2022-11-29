@@ -57,3 +57,13 @@
 .stitlebar-button:hover{
     background-color: rgba(141, 141, 141, 0.226);
 }
+
+.container{
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
